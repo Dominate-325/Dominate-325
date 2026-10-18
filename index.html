@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>林壹 — 只有新的神咬过爱的苹果</title>
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#7dd3fc}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue","Noto Sans CJK SC",sans-serif;background:linear-gradient(180deg,#071025 0%, #071726 100%);color:#e6eef6}
+    .wrap{max-width:900px;margin:48px auto;padding:28px;background:rgba(255,255,255,0.02);border-radius:12px;box-shadow:0 6px 30px rgba(2,6,23,0.6)}
+    header{display:flex;gap:20px;align-items:center}
+    .avatar{width:88px;height:88px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#60a5fa);display:flex;align-items:center;justify-content:center;font-weight:700;color:#04263a}
+    h1{margin:0;font-size:28px}
+    .tagline{color:var(--muted);margin-top:6px}
+    .badges{margin-top:12px;display:flex;gap:8px;flex-wrap:wrap}
+    .section{margin-top:24px}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:rgba(255,255,255,0.03);padding:6px 10px;border-radius:999px;color:var(--muted);font-size:13px}
+    .projects{display:grid;grid-template-columns:1fr;gap:12px}
+    .project{background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02));padding:12px;border-radius:10px}
+    footer{margin-top:28px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+    a{color:var(--accent);text-decoration:none}
+    @media(min-width:720px){ .projects{grid-template-columns:1fr 1fr} }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <div class="avatar">林壹</div>
+      <div>
+        <h1>林壹 <span style="color:var(--muted);font-weight:500">— 平面设计师</span></h1>
+        <div class="tagline">只有新的神咬过爱的苹果</div>
+        <div class="badges">
+          <img alt="followers" src="https://img.shields.io/github/followers/Dominate-325?style=social" />
+          <img alt="status" src="https://img.shields.io/badge/Status-可接项目-7dd3fc?style=flat&logo=ghost&logoColor=04263a" />
+        </div>
+      </div>
+    </header>
+
+    <section class="section">
+      <h3>关于我</h3>
+      <p style="color:var(--muted)">我是平面设计师，擅长将美学与功能结合，创作有温度的视觉作品。关注品牌识别、版面与影像呈现与短视频剪辑。</p>
+    </section>
+
+    <section class="section">
+      <h3>Top Skills</h3>
+      <div class="skills">
+        <div class="skill">三恋</div>
+        <div class="skill">美工</div>
+        <div class="skill">剪辑</div>
+        <div class="skill">树洞</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h3>精选项目</h3>
+      <div class="projects">
+        <div class="project">
+          <strong>作品集（在线文档）</strong>
+          <p style="color:var(--muted);margin:6px 0">更多作品与说明请查看：<a href="https://www.kdocs.cn/l/ciMya78hWn0A" target="_blank" rel="noopener noreferrer">在线作品文档（KDocs）</a></p>
+        </div>
+        <div class="project">
+          <strong>项目二 — 待补充</strong>
+          <p style="color:var(--muted);margin:6px 0">如需展示更多项目，请在仓库中编辑此页面或把项目详情发送给我，我会替你补全。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h3>开源与贡献</h3>
+      <p style="color:var(--muted)">暂无公开仓库（可选：提供链接我将展示在此处）。</p>
+    </section>
+
+    <section class="section">
+      <h3>联系我</h3>
+      <p style="color:var(--muted)">作品与联系方式见在线文档：<a href="https://www.kdocs.cn/l/ciMya78hWn0A" target="_blank" rel="noopener noreferrer">https://www.kdocs.cn/l/ciMya78hWn0A</a></p>
+    </section>
+
+    <section class="section">
+      <h3>动态统计</h3>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center">
+        <img alt="github-stats" src="https://github-readme-stats.vercel.app/api?username=Dominate-325&show_icons=true&theme=tokyonight" style="max-width:100%;border-radius:8px" />
+        <img alt="top-langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Dominate-325&layout=compact&theme=tokyonight" style="max-width:220px;border-radius:8px" />
+      </div>
+    </section>
+
+    <footer>
+      <div>此页面已由 Copilot 自动部署到仓库根目录。如需我添加 README、自动部署工作流或自定义域，请告诉我。</div>
+      <div>最后更新：<span id="updated">—</span></div>
+    </footer>
+  </main>
+
+  <script>
+    // 自动显示最后更新时间（生成/编辑时间）
+    document.getElementById('updated').textContent = new Date().toLocaleString();
+  </script>
+</body>
+</html>
