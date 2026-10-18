@@ -3,96 +3,175 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>林壹 — 只有新的神咬过爱的苹果</title>
+  <title>林壹 — 只有新的神咬過愛的蘋果</title>
+  <meta name="description" content="林壹 — 平面设计师 • 品牌 / 视觉 / 剪辑 • 作品集与联络" />
+  <link rel="icon" href="https://avatars.githubusercontent.com/Dominate-325" />
   <style>
-    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#7dd3fc}
-    html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue","Noto Sans CJK SC",sans-serif;background:linear-gradient(180deg,#071025 0%, #071726 100%);color:#e6eef6}
-    .wrap{max-width:900px;margin:48px auto;padding:28px;background:rgba(255,255,255,0.02);border-radius:12px;box-shadow:0 6px 30px rgba(2,6,23,0.6)}
-    header{display:flex;gap:20px;align-items:center}
-    .avatar{width:88px;height:88px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#60a5fa);display:flex;align-items:center;justify-content:center;font-weight:700;color:#04263a}
-    h1{margin:0;font-size:28px}
-    .tagline{color:var(--muted);margin-top:6px}
+    /* 西欧神性文艺 风格 */
+    @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Inter:wght@300;400;600&display=swap');
+    :root{
+      --bg:#f7f6f3;--card:#ffffff;--muted:#6b6b6b;--accent:#7a5cff;--gold:#c9a24a
+    }
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue","Noto Sans CJK SC",sans-serif;background:linear-gradient(180deg,#f6f5f3 0%, #efece8 100%);color:#222}
+    .wrap{max-width:1000px;margin:40px auto;padding:28px;background:var(--card);border-radius:16px;box-shadow:0 8px 40px rgba(31,28,24,0.08);border:1px solid rgba(10,10,10,0.03)}
+    header{display:flex;gap:22px;align-items:center}
+    .banner{flex:1;padding:18px;border-radius:12px;background:linear-gradient(135deg,rgba(122,92,255,0.08),rgba(201,162,74,0.04));display:flex;align-items:center;gap:16px}
+    .avatar{width:96px;height:96px;border-radius:12px;overflow:hidden;flex:0 0 96px;box-shadow:0 6px 24px rgba(122,92,255,0.08)}
+    .avatar img{width:100%;height:100%;object-fit:cover;display:block}
+    h1{margin:0;font-family:'Merriweather',serif;font-weight:700;font-size:30px;color:#1f1b24}
+    .role{color:var(--muted);margin-top:6px}
+    .tagline{color:var(--gold);margin-top:8px;font-family:'Merriweather',serif}
     .badges{margin-top:12px;display:flex;gap:8px;flex-wrap:wrap}
-    .section{margin-top:24px}
-    .skills{display:flex;flex-wrap:wrap;gap:8px}
-    .skill{background:rgba(255,255,255,0.03);padding:6px 10px;border-radius:999px;color:var(--muted);font-size:13px}
-    .projects{display:grid;grid-template-columns:1fr;gap:12px}
-    .project{background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02));padding:12px;border-radius:10px}
-    footer{margin-top:28px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
-    a{color:var(--accent);text-decoration:none}
-    @media(min-width:720px){ .projects{grid-template-columns:1fr 1fr} }
+    .section{margin-top:28px}
+    .skills{display:flex;flex-wrap:wrap;gap:10px}
+    .skill{background:linear-gradient(180deg,rgba(250,248,244,1),rgba(245,243,240,1));padding:8px 12px;border-radius:999px;border:1px solid rgba(180,170,150,0.12);color:#4b4b4b;font-size:14px}
+    .projects{display:grid;grid-template-columns:1fr;gap:14px}
+    .project{background:linear-gradient(180deg,#fff,#fbfaf8);padding:14px;border-radius:12px;border:1px solid rgba(10,10,10,0.03)}
+    .project h4{margin:0 0 6px 0;font-family:'Merriweather',serif}
+    .meta{color:var(--muted);font-size:13px}
+    .controls{display:flex;gap:8px;margin-top:12px}
+    .btn{padding:8px 12px;border-radius:8px;background:var(--accent);color:white;text-decoration:none;font-weight:600}
+    footer{margin-top:32px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+    a{color:var(--accent)}
+    .grid{display:grid;grid-template-columns:2fr 1fr;gap:20px}
+    @media(max-width:880px){.grid{grid-template-columns:1fr}.avatar{width:80px;height:80px}}
+    /* decorative emblem */
+    .emblem{width:64px;height:64px;border-radius:8px;background:linear-gradient(135deg,var(--accent),var(--gold));display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-family:'Merriweather',serif}
+    .icon-row{display:flex;gap:10px;align-items:center}
+    .iframe-wrap{border-radius:10px;overflow:hidden;border:1px solid rgba(10,10,10,0.04)}
   </style>
 </head>
 <body>
   <main class="wrap">
     <header>
-      <div class="avatar">林壹</div>
-      <div>
-        <h1>林壹 <span style="color:var(--muted);font-weight:500">— 平面设计师</span></h1>
-        <div class="tagline">只有新的神咬过爱的苹果</div>
-        <div class="badges">
-          <img alt="followers" src="https://img.shields.io/github/followers/Dominate-325?style=social" />
-          <img alt="status" src="https://img.shields.io/badge/Status-可接项目-7dd3fc?style=flat&logo=ghost&logoColor=04263a" />
+      <div class="banner">
+        <div class="avatar" title="头像">
+          <img src="https://avatars.githubusercontent.com/Dominate-325" alt="Avatar" />
+        </div>
+        <div style="flex:1">
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+            <div>
+              <h1>林壹</h1>
+              <div class="role">平面设计师</div>
+              <div class="tagline">⊙ 只有新的神咬過愛的蘋果</div>
+            </div>
+            <div style="text-align:right">
+              <div class="emblem">⅍</div>
+              <div style="color:var(--muted);font-size:13px;margin-top:6px">西欧 · 神性 · 文艺</div>
+            </div>
+          </div>
+
+          <div class="badges">
+            <img alt="followers" src="https://img.shields.io/github/followers/Dominate-325?style=social" />
+            <img alt="status" src="https://img.shields.io/badge/Status-可接项目-7a5cff?style=flat&logo=ghost&logoColor=fff" />
+          </div>
         </div>
       </div>
     </header>
 
-    <section class="section">
-      <h3>关于我</h3>
-      <p style="color:var(--muted)">我是平面设计师，擅长将美学与功能结合，创作有温度的视觉作品。关注品牌识别、版面与影像呈现与短视频剪辑。</p>
-    </section>
+    <div class="grid">
+      <section class="section">
+        <h3>关于 / 简介</h3>
+        <p style="color:var(--muted)">我是平面设计师，专注于品牌识别、视觉传达、版面设计与短视频剪辑。作品倾向于在西欧美学与神性意象之间寻找平衡，擅长把诗意与功能融合于视觉语言中。</p>
 
-    <section class="section">
-      <h3>Top Skills</h3>
-      <div class="skills">
-        <div class="skill">三恋</div>
-        <div class="skill">美工</div>
-        <div class="skill">剪辑</div>
-        <div class="skill">树洞</div>
-      </div>
-    </section>
-
-    <section class="section">
-      <h3>精选项目</h3>
-      <div class="projects">
-        <div class="project">
-          <strong>作品集（在线文档）</strong>
-          <p style="color:var(--muted);margin:6px 0">更多作品与说明请查看：<a href="https://www.kdocs.cn/l/ciMya78hWn0A" target="_blank" rel="noopener noreferrer">在线作品文档（KDocs）</a></p>
+        <div class="section">
+          <h3>核心技能</h3>
+          <div class="skills">
+            <div class="skill">三恋</div>
+            <div class="skill">美工</div>
+            <div class="skill">剪辑</div>
+            <div class="skill">树洞</div>
+            <div class="skill">品牌识别</div>
+            <div class="skill">版面编排</div>
+            <div class="skill">动效基础</div>
+          </div>
         </div>
-        <div class="project">
-          <strong>项目二 — 待补充</strong>
-          <p style="color:var(--muted);margin:6px 0">如需展示更多项目，请在仓库中编辑此页面或把项目详情发送给我，我会替你补全。</p>
+
+        <div class="section">
+          <h3>精选项目</h3>
+          <div class="projects">
+            <div class="project">
+              <h4>⅍ - 独木不成林</h4>
+              <div class="meta">在线作品文档 • KDocs</div>
+              <p style="color:var(--muted);margin-top:8px">包含：品牌视觉、海报系列、短视频节选与项目说明。点击下方预览或在新页打开完整文档。</p>
+              <div class="controls">
+                <a class="btn" href="https://www.kdocs.cn/l/cgY0hxxRjzxp" target="_blank" rel="noopener noreferrer">打开 KDocs 完整文档</a>
+                <a class="btn" href="#preview">页面内预览 (尝试)</a>
+              </div>
+            </div>
+
+            <div class="project">
+              <h4>更多作品</h4>
+              <div class="meta">若要展示其他项目，请发送项目详情</div>
+              <p style="color:var(--muted);margin-top:8px">我可以把每个项目扩展为案例研究，包含项目背景、我的职责、工具栈与成果（图像 / 链接 / 视频）。</p>
+            </div>
+          </div>
         </div>
+
+      </section>
+
+      <aside class="section" style="padding-left:6px">
+        <h3>联系与社交</h3>
+        <div class="icon-row" style="margin-top:8px;flex-direction:column;align-items:flex-start">
+          <a href="https://github.com/Dominate-325" target="_blank">GitHub: Dominate-325</a>
+          <a href="https://www.kdocs.cn/l/cgY0hxxRjzxp" target="_blank">作品集 (KDocs)</a>
+          <a href="mailto:1018262093@qq.com">邮箱: 1018262093@qq.com</a>
+          <!-- 可替换：Twitter / LinkedIn / Mastodon 等 -->
+        </div>
+
+        <div class="section">
+          <h3>页面操作</h3>
+          <p class="meta">此页面由 Copilot 自动生成并发布到仓库根目录。若要统一 README.md 与该页面，已在仓库添加 README（见下）。</p>
+        </div>
+
+        <div class="section">
+          <h3>页面内预览</h3>
+          <p class="meta">下面尝试把 KDocs 嵌入页面（部分外部站点可能阻止嵌入，若无法显示，请点击“打开 KDocs 完整文档”在新标签页查看）。</p>
+
+        </div>
+      </aside>
+    </div>
+
+    <div id="preview" class="section">
+      <h3>内嵌预览（若被阻止将显示链接）</h3>
+      <div class="iframe-wrap">
+        <iframe id="kdocs-iframe" src="https://www.kdocs.cn/l/cgY0hxxRjzxp" style="width:100%;height:520px;border:0;" loading="lazy"></iframe>
       </div>
-    </section>
-
-    <section class="section">
-      <h3>开源与贡献</h3>
-      <p style="color:var(--muted)">暂无公开仓库（可选：提供链接我将展示在此处）。</p>
-    </section>
-
-    <section class="section">
-      <h3>联系我</h3>
-      <p style="color:var(--muted)">作品与联系方式见在线文档：<a href="https://www.kdocs.cn/l/ciMya78hWn0A" target="_blank" rel="noopener noreferrer">https://www.kdocs.cn/l/ciMya78hWn0A</a></p>
-    </section>
+      <p style="color:var(--muted);margin-top:8px">提示：若浏览器显示空白或报错，说明外部网站设置了禁止嵌入（X-Frame-Options）。请点击上方“打开 KDocs 完整文档”在新窗口打开。</p>
+    </div>
 
     <section class="section">
       <h3>动态统计</h3>
       <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center">
-        <img alt="github-stats" src="https://github-readme-stats.vercel.app/api?username=Dominate-325&show_icons=true&theme=tokyonight" style="max-width:100%;border-radius:8px" />
-        <img alt="top-langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Dominate-325&layout=compact&theme=tokyonight" style="max-width:220px;border-radius:8px" />
+        <img alt="github-stats" src="https://github-readme-stats.vercel.app/api?username=Dominate-325&show_icons=true&theme=classic" style="max-width:100%;border-radius:8px" />
       </div>
     </section>
 
     <footer>
-      <div>此页面已由 Copilot 自动部署到仓库根目录。如需我添加 README、自动部署工作流或自定义域，请告诉我。</div>
+      <div>© 林壹 — 只有新的神咬過愛的蘋果</div>
       <div>最后更新：<span id="updated">—</span></div>
     </footer>
   </main>
 
   <script>
-    // 自动显示最后更新时间（生成/编辑时间）
+    // 显示更新时间
     document.getElementById('updated').textContent = new Date().toLocaleString();
+
+    // 若 iframe 因 X-Frame-Options 而被阻止，显示提示
+    const iframe = document.getElementById('kdocs-iframe');
+    iframe.addEventListener('load', ()=>{
+      try{
+        const doc = iframe.contentDocument || iframe.contentWindow.document;
+        // 访问可能被阻止，若异常则捕获
+        if(!doc || !doc.body || doc.body.innerHTML.length<20){
+          // 可能被阻止
+          // 这里我们不能 programmatically detect all cases; keep the fallback note
+        }
+      }catch(e){
+        // 访问被浏览器阻止：显示友好提示（页面已包含说明）
+        console.log('iframe blocked or cross-origin: ', e);
+      }
+    });
   </script>
 </body>
 </html>
